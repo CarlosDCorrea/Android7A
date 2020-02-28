@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pets</string>
+    <string name="lbl_fname">Firstname</string>
+    <string name="lbl_lname">Lastname</string>
+    <string name="lbl_fhname">Type firtname</string>
+    <string name="lbl_reg">Register</string>
 </resources>

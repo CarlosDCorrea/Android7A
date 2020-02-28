@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">mascotas</string>
+    <string name="lbl_fname">nombres</string>
+    <string name="lbl_lname">Apellidos</string>
+    <string name="lbl_fhname">Escriba su nombre</string>
+    <string name="lbl_reg">Registro</string>
+
 </resources>

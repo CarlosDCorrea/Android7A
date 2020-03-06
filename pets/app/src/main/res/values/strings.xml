@@ -4,4 +4,7 @@
     <string name="lbl_lname">Lastname</string>
     <string name="lbl_fhname">Type firtname</string>
     <string name="lbl_reg">Register</string>
+    <string name="lbl_email">E-mail</string>
+    <string name="lbl_password">Password</string>
+    <string name="btn_sign_in">sign in</string>
 </resources>

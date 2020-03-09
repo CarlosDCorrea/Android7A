@@ -23,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/lbl_email"
             android:inputType="textEmailAddress" />
 
         <TextView
@@ -36,14 +37,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/lbl_password"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/btn_login"
             android:onClick="btn_Loggin"
-            android:text="Sign in" />
+            android:text="Sign in"
+            android:textColor="@android:color/background_light"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/btn_register"
+            android:onClick="btn_sign_up"
+            android:text="@string/btn_sign_up"
+            android:textColor="@android:color/background_light" />
     </LinearLayout>
 
 </RelativeLayout>

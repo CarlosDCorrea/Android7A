@@ -5,6 +5,7 @@
     <string name="lbl_fhname">Type firtname</string>
     <string name="lbl_reg">Register</string>
     <string name="lbl_email">username@gmail.com</string>
+    <string name="lbl_login">Login</string>
     <string name="lbl_password">Password</string>
     <string name="btn_sign_in">sign in</string>
     <string name="btn_sign_up">sign up</string>

@@ -9,5 +9,6 @@
     <string name="lbl_password">Contraseña</string>
     <string name="btn_sign_in">Iniciar sesión</string>
     <string name="btn_sign_up">Registrarse</string>
+    <string name="lbl_login">Iniciar Sesiòn</string>
 
 </resources>

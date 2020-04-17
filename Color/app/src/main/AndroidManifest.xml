@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AboutofActivity" android:label="@string/lblOpAboutof"></activity>
-        <activity android:name=".Palett">
+        <activity android:name=".Palette">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

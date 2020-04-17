@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
-public class Palett extends AppCompatActivity
+public class Palette extends AppCompatActivity
         implements SeekBar.OnSeekBarChangeListener {
 
     private SeekBar vRed = null;
@@ -46,13 +46,14 @@ public class Palett extends AppCompatActivity
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             //1. Get Seekbar values
             int r = vRed.getProgress();
-            int g = vRed.getProgress();
-            int b = vRed.getProgress();
-            int a = vRed.getProgress();
+            int g = vGreen.getProgress();
+            int b = vBlue.getProgress();
+            int a = vAlpha.getProgress();
 
             //2. convert values (in step 1) to ARGB function
             int filter_color = Color.argb(a, r, g, b); // the variables above
-
+            //3. set the new color to image
+            vFilter.setBackgroundColor(filter_color);
         }
 
         @Override

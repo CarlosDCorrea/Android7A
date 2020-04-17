@@ -3,6 +3,7 @@ package com.example.color;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -50,7 +51,7 @@ public class Palett extends AppCompatActivity
             int a = vRed.getProgress();
 
             //2. convert values (in step 1) to ARGB function
-            int filter_color Color.argb(a, r, g, b); // the variables above
+            int filter_color = Color.argb(a, r, g, b); // the variables above
 
         }
 
@@ -79,43 +80,71 @@ public class Palett extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {//metodos hermanos
         switch (item.getItemId()){
             case R.id.iteTransparent:
-                Toast.makeText(this, "This color is going to change to Transparent", Toast.LENGTH_SHORT).show();
+                vAlpha .setProgress(0);
                 break;
             case R.id.iteSemitransparent:
-                Toast.makeText(this, "This color is going to change to Semi-transparent", Toast.LENGTH_SHORT).show();
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteReset:
-                Toast.makeText(this, "The color is going to reset", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(0);
                 break;
             case R.id.iteRed:
-                Toast.makeText(this, "This color is going to change to Red", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(255);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteBlue:
-                Toast.makeText(this, "This color is going to change to Blue", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteGreen:
-                Toast.makeText(this, "This color is going to change to Green", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(0);
+                vGreen.setProgress(255);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteCyan:
-                Toast.makeText(this, "This color is going to change to Cyan", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(0);
+                vGreen.setProgress(160);
+                vBlue.setProgress(227);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteMagenta:
-                Toast.makeText(this, "This color is going to change to Magenta", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(229);
+                vGreen.setProgress(9);
+                vBlue.setProgress(127);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteYellow:
-                Toast.makeText(this, "This color is going to change to Yellow", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(236);
+                vGreen.setProgress(255);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteBlack:
-                Toast.makeText(this, "This color is going to change to Black", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteWhite:
-                Toast.makeText(this, "This color is going to change to White", Toast.LENGTH_SHORT).show();
+                vRed.setProgress(255);
+                vGreen.setProgress(255);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteOpaque:
-                Toast.makeText(this, "This color is going to turn Opaque", Toast.LENGTH_SHORT).show();
+                vAlpha.setProgress(255);
                 break;
             case R.id.iteAboutof:
-                Toast.makeText(this, "Go to the About of Page", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, AboutofActivity.class);
+                startActivity(intent);
                 break;
         }
         return super.onOptionsItemSelected(item);

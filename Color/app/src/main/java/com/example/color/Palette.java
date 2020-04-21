@@ -58,7 +58,7 @@ public class Palette extends AppCompatActivity
 
         @Override
         public void onStartTrackingTouch(SeekBar seekBar) {
-
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
         }
 
         @Override

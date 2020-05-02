@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -39,6 +40,8 @@ public class Palette extends AppCompatActivity
         vBlue.setOnSeekBarChangeListener(this);
         vAlpha.setOnSeekBarChangeListener(this);
 
+        //Show the context menu when i pressed for a time in on the component
+        registerForContextMenu(vFilter);
     }
 
     //Menus
@@ -66,22 +69,31 @@ public class Palette extends AppCompatActivity
 
         }
 
-
+    //##################################
+    //OPTIONS MENU
+    //##################################
     //Show the options menu on the device.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_options, menu);//R nos allows us invoke the options menu with its id´s
+        inflater.inflate(R.menu.menu_options, menu);//R allows us invoke the options menu with its id´s
         return super.onCreateOptionsMenu(menu);
     }
 
     //item actions.
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {//metodos hermanos
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {//brother methods
         switch (item.getItemId()){
+
+            case R.id.icHelp:
+                Toast.makeText(this, "you have pressed help icon", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.icTransparent:
+                vAlpha.setProgress(0);
+                break;
             case R.id.iteTransparent:
-                vAlpha .setProgress(0);
+                vAlpha.setProgress(0);
                 break;
             case R.id.iteSemitransparent:
                 vAlpha.setProgress(128);
@@ -149,5 +161,34 @@ public class Palette extends AppCompatActivity
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //##################################
+    //CONTEXT MENU
+    //##################################
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu2, menu);
+
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.iteHelp:
+                Toast.makeText(this, "you have pressed help item", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.iteReset:
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(0);
+                break;
+        }
+        return super.onContextItemSelected(item);
     }
 }

@@ -19,4 +19,7 @@
     <string name="lblOpReset">Reset</string>
     <string name="lblOpAboutof">About of</string>
     <string name="lblHelp">Help</string>
+    <string name="lblOpColors">Colors</string>
+    <string name="lblOpCloseApp">Close App</string>
+
 </resources>

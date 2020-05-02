@@ -19,4 +19,6 @@
     <string name="lblOpReset">Reestablecer</string>
     <string name="lblOpAboutof">Acerca de.</string>
     <string name="lblHelp">Ayuda</string>
+    <string name="lblOpColors">Colores</string>
+    <string name="lblOpCloseApp">Cerrar aplicación</string>
 </resources>

@@ -21,5 +21,8 @@
     <string name="lblHelp">Help</string>
     <string name="lblOpColors">Colors</string>
     <string name="lblOpCloseApp">Close App</string>
+    <!--developer information-->
+    <string name="lblInfo"><p>Carlos Correa is a college student at the CESMAG university that actually is studying system engineering
+    he is 20 years old and loves how technology helps people and the unbelievable and awesome that the universe is.</p></string>
 
 </resources>

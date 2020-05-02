@@ -159,6 +159,10 @@ public class Palette extends AppCompatActivity
                 Intent intent = new Intent(this, AboutofActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.iteCloseApp:
+                finish();
+                System.exit(0);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

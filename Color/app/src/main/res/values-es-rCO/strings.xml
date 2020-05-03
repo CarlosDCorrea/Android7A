@@ -24,4 +24,8 @@
     <!--información del desarrollador-->
     <string name="lblInfo"><p>Carlos Correa es un estudiante universitario de la universidad Cesmag que en la actualidad esta estudiando ingeniería de sistemas,
     el tiene 20 años de edad y ama como la tecnologia ayuda a las personas y lo increíble y asombroso que el universo es.</p></string>
+    <!--help information-->
+    <string name="lblHelpInfo"><p>Color app te permite añadir filtros a tus fotos, contactanos si tienes algún problema </p>
+        <p><br/>Correo electronico: carlosdcorrea3@gmail.com</p>
+        <p>Número telefonico: 3223298420</p></string>
 </resources>

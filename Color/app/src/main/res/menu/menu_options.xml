@@ -28,8 +28,8 @@
         </menu>
 
     </item>
-    <item android:id="@+id/iteAboutof" android:title="@string/lblOpAboutof" />
     <item android:id="@+id/iteReset" android:title="@string/lblOpReset" />
+    <item android:id="@+id/iteAboutof" android:title="@string/lblOpAboutof" />
     <item android:id="@+id/iteCloseApp" android:title="@string/lblOpCloseApp"></item>
 
 

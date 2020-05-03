@@ -87,7 +87,8 @@ public class Palette extends AppCompatActivity
         switch (item.getItemId()){
 
             case R.id.icHelp:
-                Toast.makeText(this, "you have pressed help icon", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(this, HelpActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.icTransparent:
                 vAlpha.setProgress(0);
@@ -163,6 +164,7 @@ public class Palette extends AppCompatActivity
                 finish();
                 System.exit(0);
                 break;
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -182,9 +184,9 @@ public class Palette extends AppCompatActivity
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-
             case R.id.iteHelp:
-                Toast.makeText(this, "you have pressed help item", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, HelpActivity.class);
+                startActivity(intent);
                 break;
             case R.id.iteReset:
                 vRed.setProgress(0);

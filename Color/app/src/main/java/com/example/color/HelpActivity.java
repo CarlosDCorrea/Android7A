@@ -6,13 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-public class AboutofActivity extends AppCompatActivity {
+public class HelpActivity extends AppCompatActivity {
 
     @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aboutof);
+        setContentView(R.layout.activity_help);
 
         ActionBar back = getSupportActionBar();
         back.setDefaultDisplayHomeAsUpEnabled(true);

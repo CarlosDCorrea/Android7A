@@ -24,5 +24,8 @@
     <!--developer information-->
     <string name="lblInfo"><p>Carlos Correa is a college student at the CESMAG university that actually is studying system engineering
     he is 20 years old and loves how technology helps people and the unbelievable and awesome that the universe is.</p></string>
-
+    <!--help information-->
+    <string name="lblHelpInfo"><p>Color app allow you to add filters to your photos, Contact us if you have any problems</p>
+        <p><br/>E-mail: carlosdcorrea3@gmail.com</p>
+        <p>Phone number: 3223298420</p></string>
 </resources>

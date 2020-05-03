@@ -9,9 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".HelpActivity"
+            android:label="@string/lblHelp"
+            android:parentActivityName=".Palette">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Palette" />
+        </activity>
         <activity
             android:name=".AboutofActivity"
-            android:label="@string/lblOpAboutof" />
+            android:label="@string/lblOpAboutof"
+            android:parentActivityName=".Palette">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Palette" />
+            </activity>
         <activity android:name=".Palette">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <!-- hints of app -->
+    <string name="ht_ex_city">Ex, Cali, Co </string>
+    <string name="ht_current">Current weather</string>
+    <string name="ht_min">Min weather</string>
+    <string name="ht_max">Max weather</string>
+    <string name="ht_weather">Weather description</string>
+    <!-- labels of app -->
+    <string name="lbl_current">Current</string>
+    <string name="lbl_min">Min</string>
+    <string name="lbl_max">Max</string>
+    <string name="lbl_weather">Weather</string>
+    <!-- buttons of app -->
+    <string name="btn_search">Search city</string>
+    <string name="btn_go_maps">Go to maps</string>
+</resources>

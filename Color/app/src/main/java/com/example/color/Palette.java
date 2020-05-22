@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Palette extends AppCompatActivity
@@ -84,6 +85,8 @@ public class Palette extends AppCompatActivity
     //item actions.
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {//brother methods
+        TextView color = null;
+        color = findViewById(R.id.color);
         switch (item.getItemId()){
 
             case R.id.icHelp:
@@ -92,6 +95,7 @@ public class Palette extends AppCompatActivity
                 break;
             case R.id.icTransparent:
                 vAlpha.setProgress(0);
+                color.setText("transparent");
                 break;
             case R.id.iteTransparent:
                 vAlpha.setProgress(0);

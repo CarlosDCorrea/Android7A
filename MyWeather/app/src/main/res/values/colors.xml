@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!-- btn colors -->
+    <color name="btn_search_color">#033B9C</color>
+    <color name="btn_maps_color">#8BC34A</color>
+    <!-- lbl colors colors -->
+
+    <color name="lyt_hor_color">#B7A6A6A6</color>
+    <color name="bg_splashscreen">#B7FDCF41</color>
+
+</resources>

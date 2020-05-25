@@ -86,14 +86,10 @@ public class Palette extends AppCompatActivity
     //item actions.
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {//brother methods
-<<<<<<< HEAD
+
         TextView color = null;
         color = findViewById(R.id.color);
-=======
 
-        TextView mensaje = findViewById(R.id.msj);
-
->>>>>>> 94ce60e56a173633e4ae43e5a56b0be5e09827bb
         switch (item.getItemId()){
 
             case R.id.icHelp:
@@ -102,86 +98,85 @@ public class Palette extends AppCompatActivity
                 break;
             case R.id.icTransparent:
                 vAlpha.setProgress(0);
-<<<<<<< HEAD
+
                 color.setText("transparent");
-=======
-                mensaje.setText("Transparent");
->>>>>>> 94ce60e56a173633e4ae43e5a56b0be5e09827bb
+
+
                 break;
             case R.id.iteTransparent:
                 vAlpha.setProgress(0);
-                mensaje.setText("Trasparent");
+                color.setText("Trasparent");
                 break;
             case R.id.iteSemitransparent:
                 vAlpha.setProgress(128);
-                mensaje.setText("Semi trasnparent");
+                color.setText("Semi trasnparent");
                 break;
             case R.id.iteReset:
                 vRed.setProgress(0);
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(0);
-                mensaje.setText("");
+                color.setText("");
                 break;
             case R.id.iteRed:
                 vRed.setProgress(255);
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
-                mensaje.setText("Red");
+                color.setText("Red");
                 break;
             case R.id.iteBlue:
                 vRed.setProgress(0);
                 vGreen.setProgress(0);
                 vBlue.setProgress(255);
                 vAlpha.setProgress(128);
-                mensaje.setText("Blue");
+                color.setText("Blue");
                 break;
             case R.id.iteGreen:
                 vRed.setProgress(0);
                 vGreen.setProgress(255);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
-                mensaje.setText("Green");
+                color.setText("Green");
                 break;
             case R.id.iteCyan:
                 vRed.setProgress(0);
                 vGreen.setProgress(160);
                 vBlue.setProgress(227);
                 vAlpha.setProgress(128);
-                mensaje.setText("Cyan");
+                color.setText("Cyan");
                 break;
             case R.id.iteMagenta:
                 vRed.setProgress(229);
                 vGreen.setProgress(9);
                 vBlue.setProgress(127);
                 vAlpha.setProgress(128);
-                mensaje.setText("Magenta");
+                color.setText("Magenta");
                 break;
             case R.id.iteYellow:
                 vRed.setProgress(236);
                 vGreen.setProgress(255);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
-                mensaje.setText("Yellow");
+               color.setText("Yellow");
                 break;
             case R.id.iteBlack:
                 vRed.setProgress(0);
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
-                mensaje.setText("Black");
+                color.setText("Black");
                 break;
             case R.id.iteWhite:
                 vRed.setProgress(255);
                 vGreen.setProgress(255);
                 vBlue.setProgress(255);
                 vAlpha.setProgress(128);
-                mensaje.setText("White");
+                color.setText("White");
                 break;
             case R.id.iteOpaque:
                 vAlpha.setProgress(255);
-                mensaje.setText("Opaque");
+                color.setText("Opaque");
                 break;
             case R.id.iteAboutof:
                 Intent intent = new Intent(this, AboutofActivity.class);

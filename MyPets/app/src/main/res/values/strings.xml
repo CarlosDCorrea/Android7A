@@ -9,6 +9,9 @@
     <!-- Register user activity -->
     <string name="activity_label">New user</string>
     <string name="lbl_email">E-mail</string>
-    <string name="lbl_password">E-mail</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_password2">Repeat Password</string>
+    <!-- list pets activity -->
+    <string name="title_activity">All pets</string>
 
 </resources>

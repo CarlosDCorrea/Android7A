@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    android:padding="30dp"
     android:background="@drawable/panther"
-    android:padding="30dp">
+    tools:context=".LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,51 +15,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_vertical">
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/EmailUserLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/hnt_email"
-                android:textSize="20sp"
-                android:textColorHint="@color/colorHint"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/style_login"
                 android:layout_marginBottom="20dp"
-                android:gravity="center_horizontal"/>
+                android:background="@drawable/style_login"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/hnt_email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/colorHint"
+                android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/PasswordUserLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/hnt_pw"
-                android:textSize="20sp"
-                android:textColorHint="@color/colorHint"
-                android:inputType="textPassword"
-                android:background="@drawable/style_login"
                 android:layout_marginBottom="30dp"
-                android:gravity="center_horizontal"/>
+                android:background="@drawable/style_login"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/hnt_pw"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/colorHint"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/SignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/style_login"
+                android:onClick="btn_login"
                 android:text="@string/btn_login"
-                android:background="@drawable/style_login"
-                android:textColor="@color/colorBtnLogin"
-                android:layout_marginBottom="10dp"/>
+                android:textColor="@color/colorBtnLogin" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/Register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_register"
                 android:background="@drawable/style_login"
-                android:textColor="@color/colorBtnLogin"/>
+                android:onClick="btn_go_register"
+                android:text="@string/btn_register"
+                android:textColor="@color/colorBtnLogin" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

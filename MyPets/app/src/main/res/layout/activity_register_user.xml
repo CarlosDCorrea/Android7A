@@ -25,7 +25,7 @@
                 android:textColor="@color/colorLblText" />
 
             <EditText
-                android:id="@+id/txtEmail"
+                android:id="@+id/txtEmailRegisterUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -41,7 +41,23 @@
                 android:textColor="@color/colorLblText" />
 
             <EditText
-                android:id="@+id/txtPassword"
+                android:id="@+id/txtPasswordRegisterUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/style_register_user"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_password2"
+                android:textColor="@color/colorLblText" />
+
+            <EditText
+                android:id="@+id/txtPasswordRegisterUserRepeat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
@@ -56,6 +72,15 @@
                 android:background="@color/colorBtnRegister"
                 android:onClick="btn_register"
                 android:text="@string/btn_register"
+                android:textColor="@color/colorLblText" />
+
+            <Button
+                android:id="@+id/btn_go_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBtnRegister"
+                android:onClick="btn_go_login"
+                android:text="@string/btn_login"
                 android:textColor="@color/colorLblText" />
 
         </LinearLayout>

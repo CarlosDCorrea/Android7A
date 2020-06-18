@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShopingCartActivity</string>
+    <string name="title_activity">Shopping Cart</string>
+    <string name="lbl_product_name">Product name</string>
+    <string name="lbl_Quantity_product">Quantity</string>
+    <string name="btn_add_cart">Add to cart</string>
+    <string name="btn_buy">Buy</string>
+    <string name="lbl_Option_menu">Options</string>
+    <string name="lbl_Help">Help</string>
+    <string name="lbl_AboutOf">About of</string>
+    <string name="lbl_CloseApp">Close App</string>
+    <string name="lbl_message">There is not products in the cart</string>
+
+
+</resources>

@@ -15,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -35,14 +36,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/lbl_Quantity_product" />
+                android:text="@string/lbl_Quantity_product"
+                android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/txtProductQuantity"
@@ -60,7 +63,8 @@
             android:background="@color/btn_color_addCart"
             android:onClick="btn_view_all_products"
             android:text="@string/btn_add_cart"
-            android:textColor="@color/btn_color_text" />
+            android:textColor="@color/btn_color_text"
+            android:padding="5dp"/>
 
         <ListView
             android:id="@+id/listProducts"
@@ -76,6 +80,7 @@
             android:background="@color/btn_color_buy"
             android:onClick="btn_buy_all_products"
             android:text="@string/btn_buy"
-            android:textColor="@color/btn_color_text" />
+            android:textColor="@color/btn_color_text"
+            android:padding="5dp"/>
     </LinearLayout>
 </RelativeLayout>
